@@ -1,32 +1,47 @@
-fetch('json/lista-libros.json')
-    .then(response => response.json())
-    .then(data => {
-        // Trabajar con los datos obtenidos
-        console.log(data); // Mostrar los datos en la consola
-        displayBooks(data); // Llamar a la función para mostrar los libros en la página
-    })
-    .catch(error => console.error('Error al obtener los datos:', error));
+let books = [
+    {
+        titulo: 'Cien años de soledad',
+        autor: 'Gabriel García Márquez',
+        genero: 'Ficción',
+        año: 1967,
+        portada: 'images/senor-de-los-anillos.jpeg'
+    },
+    {
+        titulo: 'El señor de los anillos',
+        autor: 'J.R.R. Tolkien',
+        genero: 'Fantasía',
+        año: 1954,
+        portada: 'images/senor-de-los-anillos.jpeg'
+    },
+    {
+        titulo: '1984',
+        autor: 'George Orwell',
+        genero: 'Ciencia ficción',
+        año: 1949,
+        portada: 'images/senor-de-los-anillos.jpeg'
+    }
+];
 
-function displayBooks(books) {
-    // Obtener el contenedor de la lista de libros
-    const bookListContainer = document.getElementById('lista-libros');
+let bookListContainer = document.getElementById('lista-libros');
 
-    // Mostrar la lista de libros en el contenedor
-    books.forEach(book => {
-        let bookItem = document.createElement('div');
-        bookItem.innerHTML = `
-                <h2>${book.title}</h2>
-                <img src="${book.image}" alt="${book.title}" style="max-width: 100px; max-height: 100px;">
-                <p><strong>Autor:</strong> ${book.author}</p>
-                <p><strong>Género:</strong> ${book.genre}</p>
-                <p><strong>Año:</strong> ${book.year}</p>
-                <hr>
-            `;
-        bookListContainer.appendChild(bookItem);
-    });
-}
+books.forEach(book => {
+    let bookItem = document.createElement('div');
+    bookItem.innerHTML = `
+    <img src="${books.portada}" alt="${books.titulo}" style="max-width: 100px; max-height: 100px;">
+        <h2>${books.titulo}</h2>
+        <p><strong>Autor:</strong> ${books.autor}</p>
+        <p><strong>Género:</strong> ${books.genero}</p>
+        <p><strong>Año:</strong> ${books.año}</p>x   
+        <hr>
+    `;
+    bookListContainer.appendChild(bookItem);
+});
 
+const formulario = document.getElementById("add-book-form");
 
+formulario.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const titulo = document.getElementById("title");
+    const
 
-
-
+})

@@ -40,8 +40,28 @@
             <a href="archivos html/index.html">TEST</a>
         </li>
     </div>
-    <br>
     <div id="lista-libros"></div>
     <script src="./funcionalidad.js"></script>
+    <div>
+        <h2>Agregar un nuevo Libro</h2>
+        <form id="add-book-form">
+            <label>Titulo:</label><br>
+            <input type="text" id="title"><br>
+
+            <label for="author">Autor:</label><br>
+            <input type="text" id="author"><br>
+
+            <label for="genre">Género:</label><br>
+            <input type="text" id="genre"><br>
+
+            <label for="year">Año</label><br>
+            <input type="number" id="year"><br>
+
+            <label for="image">Imagen (URL):</label><br>
+            <input type="text" id="image"><br><br>
+
+            <input type="submit" value="Agregar Libro">
+        </form>
+    </div>
 </body>
 </html>
