@@ -8,7 +8,7 @@
 <body>
     <h1>HORIZONTES DEL PENSAMIENTO</h1>
     <h2>CATEGORIAS</h2>
-    <div id="categorias">
+    <ul id="categorias">
         <li>
             <a href="archivos html/ficcion.html">FICCION</a>
         </li>
@@ -36,31 +36,26 @@
         <li>
             <a href="archivos html/arte.html">HISTORIA Y ARTE</a>
         </li>
-        <li>
-            <a href="archivos html/index.html">TEST</a>
-        </li>
-    </div>
+    </ul>
 
     <div id="lista-libros"></div>
 
-    <div>
-        <h2>Agregar un nuevo Libro</h2>
-        <form id ="formulario">
-            <label>Titulo:</label><br>
-            <input type="text" id="title" placeholder="Ingrese nombre"><br>
+    <h2><strong>AGREGAR UN LIBROS MAS</strong></h2>
+    <form id ="formulario">
+        <label>Titulo:</label><br>
+        <input type="text" id="title" placeholder="Ingrese nombre"><br>
 
-            <label for="author">Autor:</label><br>
-            <input type="text" id="author"><br>
+        <label for="author">Autor:</label><br>
+        <input type="text" id="author"><br>
 
-            <label for="genre">Género:</label><br>
-            <input type="text" id="genre"><br>
+        <label for="genre">Género:</label><br>
+        <input type="text" id="genre"><br>
 
-            <label for="year">Año</label><br>
-            <input type="number" id="year"><br>
+        <label for="year">Año</label><br>
+        <input type="number" id="year"><br>
 
-            <button type="submit" id="agregar">Agregar Nuevo Libro</button>
-        </form>
-    </div>
+        <button type="submit" id="agregar">Agregar Nuevo Libro</button>
+    </form>
     <script src="./funcionalidad.js"></script>
 </body>
 </html>
