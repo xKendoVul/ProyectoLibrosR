@@ -40,13 +40,14 @@
             <a href="archivos html/index.html">TEST</a>
         </li>
     </div>
+
     <div id="lista-libros"></div>
-    <script src="./funcionalidad.js"></script>
+
     <div>
         <h2>Agregar un nuevo Libro</h2>
-        <form id="add-book-form">
+        <form id ="formulario">
             <label>Titulo:</label><br>
-            <input type="text" id="title"><br>
+            <input type="text" id="title" placeholder="Ingrese nombre"><br>
 
             <label for="author">Autor:</label><br>
             <input type="text" id="author"><br>
@@ -57,11 +58,9 @@
             <label for="year">Año</label><br>
             <input type="number" id="year"><br>
 
-            <label for="image">Imagen (URL):</label><br>
-            <input type="text" id="image"><br><br>
-
-            <input type="submit" value="Agregar Libro">
+            <button type="submit" id="agregar">Agregar Nuevo Libro</button>
         </form>
     </div>
+    <script src="./funcionalidad.js"></script>
 </body>
 </html>

@@ -1,70 +1,52 @@
-let books = [
+let libros = [
     {
-        titulo: 'Cien años de soledad',
-        autor: 'Gabriel García Márquez',
-        genero: 'Ficción',
-        año: 1967,
-        portada: 'images/senor-de-los-anillos.jpeg'
-    },
-    {
-        titulo: 'El señor de los anillos',
-        autor: 'J.R.R. Tolkien',
-        genero: 'Fantasía',
-        año: 1954,
-        portada: 'images/senor-de-los-anillos.jpeg'
-    },
-    {
-        titulo: '1984',
-        autor: 'George Orwell',
-        genero: 'Ciencia ficción',
-        año: 1949,
-        portada: 'images/senor-de-los-anillos.jpeg'
+        titulo: "El señor de los anillos",
+        autor: "J R R Tolkien",
+        genero: "Fantasia",
+        año: 1947
     }
 ];
 
 let bookListContainer = document.getElementById('lista-libros');
 
-books.forEach(book => {
+libros.forEach(libro => {
     let bookItem = document.createElement('div');
     bookItem.innerHTML = `
-        <h2>${book.titulo}</h2>
-        <img src="${book.portada}" alt="${book.titulo}" style="max-width: 100px; max-height: 100px;">
-        <p><strong>Autor:</strong> ${book.autor}</p>
-        <p><strong>Género:</strong> ${book.genero}</p>
-        <p><strong>Año:</strong> ${book.año}</p>
+        <h2>${libro.titulo}</h2>
+        <p><strong>Autor:</strong> ${libro.autor}</p>
+        <p><strong>Género:</strong> ${libro.genero}</p>
+        <p><strong>Año:</strong> ${libro.año}</p>
         <hr>
     `;
     bookListContainer.appendChild(bookItem);
 });
 
-const formulario = document.getElementById("add-book-form");
-
+const formulario = document.getElementById("formulario");
 formulario.addEventListener('submit', function (event) {
     event.preventDefault();
-    const titulo = document.getElementById("title").value;
-    const autor = document.getElementById("author").value;
-    const genero = document.getElementById("genre").value;
-    const año = document.getElementById("year").value;
-    const imagen = document.getElementById("image").value;
+    const titulo = document.getElementById('title').value;
+    const autor = document.getElementById('author').value;
+    const genero = document.getElementById('genre').value;
+    const año = document.getElementById('year').value;
+    // let imagen = document.getElementById('image').value;
+    console.log(titulo, autor, genero, año)
 
-    books.push({ titulo, autor, genero, año, imagen });
+    localStorage.setItem('books', JSON.stringify(books));
     formulario.reset();
     displayBooks();
-})
+});
 
 function displayBooks() {
-    bookListContainer.innerHTML = '';
-    books.forEach(book => {
+    libros.forEach(libro => {
         let bookItem = document.createElement('div');
         bookItem.innerHTML = `
-            <h2>${book.titulo}</h2>
-            <img src="${book.portada}" alt="${book.titulo}" style="max-width: 100px; max-height: 100px;">
-            <p><strong>Autor:</strong> ${book.autor}</p>
-            <p><strong>Género:</strong> ${book.genero}</p>
-            <p><strong>Año:</strong> ${book.año}</p>
+            <h2>${libro.titulo}</h2>
+            
+            <p><strong>Autor:</strong> ${libro.autor}</p>
+            <p><strong>Género:</strong> ${libro.genero}</p>
+            <p><strong>Año:</strong> ${libro.año}</p>
             <hr>
         `;
-        bookListContainer.appendChild(bookItem);
     });
 }
 
