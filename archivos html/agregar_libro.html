@@ -1,31 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/de5d46081d.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ARTE</title>
+    <link rel="stylesheet" href="../archivos_css/agregar_libro.css">
+    <title>agregar libro</title>
 </head>
 <body>
-    <h1>HISTORIA Y ARTE</h1>
-    <a href="/home.html">HOME</a>
-    
-    <div id="lista-libros"></div>
+    <section>
+        <div class="bodega">
+            <div class="listado">
+                <form cont="#">
+                    <h2>AGREGA UN LIBRO O MAS</h2>
+                    <div class="alojar-bodega">
+                        <i class="fa-solid fa-book"></i>
+                        <input type="Titulo" required>
+                        <label for"#">Titulo</label>
+                    </div>
 
-    <h2><strong>AGREGAR UN LIBROS MAS</strong></h2>
-    <form id ="formulario">
-        <label>Titulo:</label><br>
-        <input type="text" id="title" placeholder="Ingrese nombre"><br>
+                    <div class="alojar-bodega">
+                        <i class="fa-solid fa-pen-fancy" style="color: #141415;"></i>
+                        <input type="autor" required>
+                        <label for"#">Autor</label>
+                    </div>
 
-        <label for="author">Autor:</label><br>
-        <input type="text" id="author"><br>
+                    <div class="alojar-bodega">
+                        <i class="fa-solid fa-address-book"></i>
+                        <input type="genero" required>
+                        <label for"#">Genero</label>
+                    </div>
 
-        <label for="genre">Género:</label><br>
-        <input type="text" id="genre"><br>
+                    <div class="alojar-bodega">
+                        <i class="fa-solid fa-clock" style="color: #000000;"></i>
+                        <input type="fecha" required>
+                        <label for"#">Fecha de publicación</label>
+                    </div>
 
-        <label for="year">Año</label><br>
-        <input type="number" id="year"><br>
+                    <div class="alojar-bodega">
+                        <i class="fa-solid fa-clock" style="color: #000000;"></i>
+                        <input type="sinopsis" required>
+                        <label for"#">Opinion del libro</label>
+                    </div>
+                </form>
 
-        <button type="submit" id="agregar">Agregar Nuevo Libro</button>
-    </form>
+                <div>
+                    <button>Agregar libro</button>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
