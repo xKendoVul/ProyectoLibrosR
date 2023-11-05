@@ -10,45 +10,43 @@
 <body>
     <section>
         <div class="bodega">
-            <div class="listado">
-                <form cont="#">
+                <form id="formulario">
                     <h2>AGREGA UN LIBRO O MAS</h2>
                     <div class="alojar-bodega">
                         <i class="fa-solid fa-book"></i>
-                        <input type="Titulo" required>
-                        <label for"#">Titulo</label>
+                        <input type="text" required id="title">
+                        <label>Titulo</label>
                     </div>
 
                     <div class="alojar-bodega">
                         <i class="fa-solid fa-pen-fancy" style="color: #141415;"></i>
-                        <input type="autor" required>
-                        <label for"#">Autor</label>
+                        <input type="text" required id="author">
+                        <label>Autor</label>
                     </div>
 
                     <div class="alojar-bodega">
                         <i class="fa-solid fa-address-book"></i>
-                        <input type="genero" required>
-                        <label for"#">Genero</label>
+                        <input type="text" required id="genre">
+                        <label>Genero</label>
                     </div>
 
                     <div class="alojar-bodega">
                         <i class="fa-solid fa-clock" style="color: #000000;"></i>
-                        <input type="fecha" required>
-                        <label for"#">Fecha de publicación</label>
+                        <input type="text" required id="year">
+                        <label>Fecha de publicación</label>
                     </div>
 
                     <div class="alojar-bodega">
                         <i class="fa-solid fa-clock" style="color: #000000;"></i>
-                        <input type="sinopsis" required>
-                        <label for"#">Opinion del libro</label>
+                        <input type="text" required id="sinopsis">
+                        <label>Sinopsis del libro</label>
+                    </div>
+                    <div>
+                        <button type="submit">Agregar libro</button>
                     </div>
                 </form>
-
-                <div>
-                    <button>Agregar libro</button>
-                </div>
-            </div>
         </div>
     </section>
+    <script src="../JS/guardar_mas_libros.js"></script>
 </body>
 </html>
