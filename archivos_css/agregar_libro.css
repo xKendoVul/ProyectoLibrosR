@@ -15,6 +15,10 @@ section {
     background-size: cover;
 }
 
+.HOME {
+    position: x
+}
+
 .bodega {
     position: relative;
     width: 600px;
@@ -50,4 +54,45 @@ section {
     pointer-events: none;
     transition: 1s;
     font-family: cursive;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.alojar-bodega input {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: -35px 0 5px;
+    color: rgb(0, 0, 0);
+}
+
+.alojar-bodega i {
+    position: absolute;
+    color: blue;
+    font: size 1.6rem;
+    top: 19px;
+    right: 8px;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    background: rgb(92, 90, 90);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    transition: .4s;
+}
+
+button:hover {
+    opacity: .9;
 }
