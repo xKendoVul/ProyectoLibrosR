@@ -1,5 +1,3 @@
-
-
 function displayBooks() {
     let coleccionLibros = JSON.parse(localStorage.getItem("biblioteca"))
     if (coleccionLibros === null) {

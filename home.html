@@ -3,46 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./archivos_css/menu.css">
     <title>Almacen de atrás</title>
 </head>
 <body>
-    <h1>HORIZONTES DEL PENSAMIENTO</h1>
-    <h2>CATEGORIAS</h2>
-    <ul id="categorias">
-        <li>
-            <a href="archivos html/ficcion.html">FICCION</a>
-        </li>
-        <li>
-            <a href="archivos html/Fantasia.html">FANTASIA</a>
-        </li>
-        <li>
-            <a href="archivos html/infantiles_juveniles.html">INFANTILES Y JUVENILES</a>
-        </li>
-        <li>
-            <a href="archivos html/ciencias_sociales.html">CIENCIAS SOCIALES</a>
-        </li>
-        <li>
-            <a href="archivos html/ciencia_tecnologia.html">CIENCIAS Y TECNOLOGIA</a>
-        </li>
-        <li>
-            <a href="archivos html/religion.html">RELIGION</a>
-        </li>
-        <li>
-            <a href="archivos html/literatura_clasica.html">LITERATURA CLASICA</a>
-        </li>
-        <li>
-            <a href="archivos html/geografia.html">EL MUNDO Y SU GEOGRAFIA</a>
-        </li>
-        <li>
-            <a href="archivos html/arte.html">HISTORIA Y ARTE</a>
-        </li>
-        <li>
-            <a href="archivos html/agregar_libro.html">**AUMENTAR LA COLECCION**</a>
-        </li>
-    </ul>
-
+    <nav class="menu">
+        <section class="marco_menu">
+            <h1 class="name__page">HORIZONTES DEL PENSAMIENTO</h1>
+        </section>
+        
+        <ul class="menu__redirection"> 
+            <li class="menu__item">
+                <a href="./archivos html/agregar_libro.html">Agregar Libro</a>
+            </li>
+            <li class="menu__item">
+                   
+        </ul>  
+    </nav>
+    
+    <label for="Buscar">Buscar un libro</label> 
+    <input type="text" id="texto_buscar" placeholder="Ingrese titulo o similar">
+    <button onclick= buscarTitulo()>Buscar</button>
     <div id="lista-libros"></div>
 
-    <script src="./JS/funcionalidad.js"></script>
+    <script src="./JS/libros.js" onload=asignarLibros()></script>
+    <script src="./JS/mostrar_home.js"></script>
 </body>
 </html>

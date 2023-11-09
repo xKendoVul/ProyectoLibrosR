@@ -12,8 +12,6 @@ formulario.addEventListener('submit', function (event) {
     const añoInput = letraMayuscula(document.getElementById('year').value);
     const sinopsisInput = letraMayuscula(document.getElementById('sinopsis').value);
 
-    console.log(tituloInput, autorInput, generoInput, añoInput,)
-
     if (tituloInput === "" || autorInput === "" || generoInput === "" || añoInput === "") {
         alert("Informacion ESTRICTAMENTE NECESARIA!!!!")
     }
