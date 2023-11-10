@@ -3,27 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de5d46081d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./archivos_css/menu.css">
     <title>Almacen de atrás</title>
 </head>
 <body>
-    <nav class="menu">
+    <nav class="menu"> 
+       
         <section class="marco_menu">
-            <h1 class="name__page">HORIZONTES DEL PENSAMIENTO</h1>
+           
+            <ul class="menu_link"> 
+                <li> 
+                    <h1 class="name__page">HORIZONTES DEL PENSAMIENTO</h1>
+                </li> 
+
+                <li class="menu__item">
+                    <a href="./archivos html/agregar_libro.html">Agregar Libro</a>
+                </li>
+
+                <li class="menu__item menu__item--show">
+                    <a href="../ProyectoLibrosR/home.html"> Caregorias </a>
+
+                    <ul class="marco__submenu">
+                        <li class="menu_inside">
+                            <a href="archivos html/arte.html" class="menu_link menu_link--inside">Arte</a> 
+                        </li>
+
+                        <li class="menu_inside">
+                            <a href="archivos html/ciencias_sociales.html" class="menu_link menu_link--inside">Ciencias Sociales</a>
+                        </li>
+
+                        <li class="menu_inside">
+                            <a href="archivos html/Ciencias_tecnologicas.html" class="menu_link menu_link--inside">Ciencias Tecnologicas</a>
+                        </li>
+
+                        <li class="menu_inside">
+                            <a href="archivos html/fantasia.html" class="menu_link menu_link--inside">Fantacia</a>
+                        </li>
+
+                        <li class="menu_inside">
+                            <a href="archivos html/ficcion.html" class="menu_link menu_link--inside">Ficcion</a>
+                        </li>
+
+                        <li class="menu_inside">
+                            <a href="archivos html/geografia.html" class="menu_link menu_link--inside">Geografia</a>
+                        </li>
+
+                        <li class="menu_inside">
+                            <a href="archivos html/infantiles_juveniles.html" class="menu_link menu_link--inside">Infantiles</a>
+                        </li>
+
+                        <li class="menu_inside">
+                            <a href="archivos html/literatura_clasica.html" class="menu_link menu_link--inside">Literatura Clasica</a>
+                        </li>
+
+                        <li class="menu_inside">
+                            <a href="archivos html/religion.html" class="menu_link menu_link--inside">Religion</a>
+                        </li>
+            
+                    </ul>
+                </li>
+                
+                <li class="menu__item">
+                    <a href="./archivos html/agregar_libro.html">recientes</a>
+                </li>
+                <label for="Buscar">Buscar un libro</label> 
+                <input type="text" id="texto_buscar" placeholder="Ingrese titulo o similar">
+                <button onclick= buscarTitulo()>Buscar</button>
+                
+            </ul>        
         </section>
-        
-        <ul class="menu__redirection"> 
-            <li class="menu__item">
-                <a href="./archivos html/agregar_libro.html">Agregar Libro</a>
-            </li>
-            <li class="menu__item">
-                   
         </ul>  
     </nav>
     
-    <label for="Buscar">Buscar un libro</label> 
-    <input type="text" id="texto_buscar" placeholder="Ingrese titulo o similar">
-    <button onclick= buscarTitulo()>Buscar</button>
     <div id="lista-libros"></div>
 
     <script src="./JS/libros.js" onload=asignarLibros()></script>
