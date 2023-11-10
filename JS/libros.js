@@ -49,31 +49,6 @@ let libros = [
 
     },
     {
-        titulo: "El nombre del viento",
-        autor: "Patrick Rothfuss",
-        genero: "Fantasia",
-        año: 2007,
-        sinopsis: "El nombre del viento es la primera entrega de la trilogía Crónica del asesino de reyes La historia" +
-            "sigue a Kvotheun joven músico y mago en ciernes que narra sus aventuras desde su infancia en una troupe" +
-            "de artistas itinerantes hastasu vida como estudiante en la Universidad, donde aprende magia y ciencia." +
-            "Con una prosa exquisitay un mundo construido, esta novela cautiva a los lectores con su narrativa" +
-            "y personajes memorables.",
-
-    },
-
-    {
-        titulo: "Juego de tronos",
-        autor: "George R.R. Martin",
-        genero: "Fantasia",
-        año: 1996,
-        sinopsis: "Juego de tronos es el primer libro de la serie Canción de hielo y fuego Ambientada en un mundo " +
-            "ficticio inspirado en la Edad Media, la trama se centra en las luchas de poder entre diversas casas nobles" +
-            "por el control del Trono de Hierroy el dominio de los Siete Reinos. Con giros inesperados, personajes " +
-            "complejos y un entorno rico en detalles, esta obra ha cautivado a millones de lectores en todo el mundo."
-
-    },
-    //*--------------------------------------------------------------
-    {
         titulo: "El gran Gatsby",
         autor: "F. Scott Fitzgerald",
         genero: "Ficcion",
@@ -237,37 +212,7 @@ let libros = [
             "a lectores jóvenes en todo el mundo."
 
     },
-    //*--------------------------------------------------------------
-    {
-        titulo: "El origen de las especies",
-        autor: "Charles Darwin",
-        genero: "Ciencias sociales",
-        año: 1859,
-        sinopsis: "El origen de las especies es una obra fundamental en la teoría de la evolución. Charles Darwin presenta su teoría de la evolución" +
-            "a través de la selección natural, revolucionando la comprensión de cómo las especies se desarrollan y se adaptan a su entorno."
-
-    },
-
-    {
-        titulo: "El Capital",
-        autor: "Karl Marx",
-        genero: "Ciencias sociales",
-        año: 1867,
-        sinopsis: "El Capital es una obra clave en la teoría marxista y la economía política. Karl Marx analiza la estructura del sistema capitalista, " +
-            "la explotación de la clase trabajadora y las implicaciones socioeconómicas de la producción y la propiedad."
-
-    },
-
-    {
-        titulo: "El choque de civilizaciones y la reconfiguración del orden mundial",
-        autor: "Samuel P. Huntington",
-        genero: "Ciencias sociales",
-        año: 1996,
-        sinopsis: "En este libro, Samuel P. Huntington argumenta que el mundo pos-Guerra Fría se caracteriza por conflictos culturales y religiosos " +
-            "entre civilizaciones en lugar de conflictos ideológicos. Propone un nuevo marco para comprender las tensiones globales y los desafíos" +
-            "geopolíticos del siglo XXI."
-
-    },
+    
     //*--------------------------------------------------------------
     {
         titulo: "El diseño de la interfaz de usuario",
