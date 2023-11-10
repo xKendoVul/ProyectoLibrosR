@@ -10,27 +10,20 @@
 <body>
     <nav class="menu"> 
        
-        <section class="marco_menu">
-           
-            <ul class="menu_link"> 
-                <li> 
-                    <h1 class="name__page">HORIZONTES DEL PENSAMIENTO</h1>
+        <section class="menu__container">
+            <h1 class="menu__logo"> HORIZONTES DEL PENSAMIENTO </h1>   
+            <ul class="menu__link">
+                <li class="menu__item">
+                    <a href="./archivos html/agregar_libro.html"> AGREGAR </a>
                 </li> 
 
-                <li class="menu__item">
-                    <a href="./archivos html/agregar_libro.html">Agregar Libro</a>
-                </li>
-
-                <li class="menu__item menu__item--show">
-                    <a href="../ProyectoLibrosR/home.html"> Caregorias </a>
-
-                    <ul class="marco__submenu">
+                <li class=" menu__item">
+                    <div>
+                        <a href=""> categoria </a>
+                    </div>
+                    <ul class="menu__nesting">
                         <li class="menu_inside">
-                            <a href="archivos html/arte.html" class="menu_link menu_link--inside">Arte</a> 
-                        </li>
-
-                        <li class="menu_inside">
-                            <a href="archivos html/ciencias_sociales.html" class="menu_link menu_link--inside">Ciencias Sociales</a>
+                            <a href="archivos html/arte.html" class="menu__link menu__link--inside">Arte</a> 
                         </li>
 
                         <li class="menu_inside">
@@ -60,20 +53,22 @@
                         <li class="menu_inside">
                             <a href="archivos html/religion.html" class="menu_link menu_link--inside">Religion</a>
                         </li>
-            
+
                     </ul>
-                </li>
-                
-                <li class="menu__item">
+                    
+                <li class="menu_link">
                     <a href="./archivos html/agregar_libro.html">recientes</a>
                 </li>
+            </ul>
+            
+
+            <li class="menu__item">
                 <label for="Buscar">Buscar un libro</label> 
                 <input type="text" id="texto_buscar" placeholder="Ingrese titulo o similar">
                 <button onclick= buscarTitulo()>Buscar</button>
-                
-            </ul>        
+            </li>      
         </section>
-        </ul>  
+     
     </nav>
     
     <div id="lista-libros"></div>
