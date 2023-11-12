@@ -64,10 +64,10 @@ input:valid~label {
 }
 
 .alojar-bodega input {
-    input: focus~label,
-        input:valid~label top: -5px;
+    input: focus-label
+    input:valid~label top: -5px;
 }
-
+ 
 .alojar-bodega input {
     width: 100%;
     height: 50px;

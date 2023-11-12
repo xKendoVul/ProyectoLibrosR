@@ -272,7 +272,7 @@ let libros = [
     {
         titulo: "El diseño de la interfaz de usuario",
         autor: "Ben Shneiderman",
-        genero: "Ciencias Tecnologicas",
+        genero: "Ciencias tecnologicas",
         año: 2010,
         sinopsis: "En este libro, Ben Shneiderman explora los principios y prácticas fundamentales para el diseño efectivo de interfaces de usuario en software " +
             "y sistemas interactivos. Ofrece pautas claras y ejemplos prácticos para mejorar la usabilidad y la experiencia del usuario en una variedad " +
@@ -283,7 +283,7 @@ let libros = [
     {
         titulo: "Handbook of Agile Software Craftsmanship",
         autor: "Robert C. Martin",
-        genero: "Ciencias Tecnologicas",
+        genero: "Ciencias tecnologicas",
         año: 2008,
         sinopsis: "Clean Code es una guía fundamental para el desarrollo de software de alta calidad. Robert C. Martin aborda principios y prácticas de programación" +
             "que fomentan la legibilidad, la mantenibilidad y la eficiencia del código, proporcionando a los desarrolladores pautas claras para mejorar " +
@@ -294,7 +294,7 @@ let libros = [
     {
         titulo: "Inteligencia Artificial: Un enfoque moderno",
         autor: "Stuart Russell",
-        genero: "Ciencias Tecnologicas",
+        genero: "Ciencias tecnologicas",
         año: 2002,
         sinopsis: "Este libro ofrece una visión completa y actualizada de la inteligencia artificial, abordando temas como la resolución de problemas," +
             "el aprendizaje automático, la percepción y la comprensión del lenguaje natural. Con ejemplos prácticos y teorías fundamentales, " +

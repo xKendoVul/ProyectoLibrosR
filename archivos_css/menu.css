@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Open+Sans:wght@400;600;800&display=swap');
 
-*{
+body {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    min-height: 100vh;
+    background-image: url(/images/71ZDZyiwx6L.jpg);
+    background-size: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-.menu{
-    background-color: rgb(69, 68, 68);
+.menu {
+    background-color: black;
     color: rgb(11, 17, 17);
     height: 70px;
 }
-.marco_menu{
+
+.marco_menu {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -24,30 +24,34 @@ body {
     margin: 0 auto;
 
 }
-.menu_link{
-  height:  100%;
-  transition: transform .5s;
-  display: flex; 
-}
-.menu__item{
-    list-style: disc;
-    position:initial;
+
+.menu_link {
     height: 100%;
-    
+    transition: transform .5s;
+    display: flex;
+}
+
+.menu__item {
+    list-style: disc;
+    position: initial;
+    height: 100%;
+
     --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
-.menu__item:hover{
+
+.menu__item:hover {
     --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-.menu_link{
-    color: aliceblue;
+.menu_link {
+    color: crimson;
     text-decoration: none;
     padding: 0 30px;
     display: flex;
     height: 100%;
     align-items: center;
 }
-.marco__submenu{
+
+.marco__submenu {
     clip-path: var(--clip);
 }
